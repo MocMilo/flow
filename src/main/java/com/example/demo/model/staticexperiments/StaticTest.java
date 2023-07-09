@@ -1,4 +1,4 @@
-package com.example.demo.model.statictest;
+package com.example.demo.model.staticexperiments;
 
 public class StaticTest {
 

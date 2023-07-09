@@ -1,9 +1,9 @@
 package com.example.demo;
 
-import com.example.demo.model.base.MyBase;
-import com.example.demo.model.statictest.Some;
-import com.example.demo.model.base.SubBase;
-import com.example.demo.model.statictest.Wrapper;
+import com.example.demo.model.inheritance.MyBase;
+import com.example.demo.model.staticexperiments.Some;
+import com.example.demo.model.inheritance.SubBase;
+import com.example.demo.model.staticexperiments.Wrapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 

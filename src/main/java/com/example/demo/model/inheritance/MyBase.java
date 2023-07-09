@@ -1,6 +1,6 @@
-package com.example.demo.model.base;
+package com.example.demo.model.inheritance;
 
-import com.example.demo.model.statictest.Some;
+import com.example.demo.model.staticexperiments.Some;
 
 public class MyBase {
 
