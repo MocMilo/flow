@@ -1,6 +1,6 @@
-package com.example.demo.model.designpatterns.abstractfactory;
+package com.example.demo.designpatterns.abstractfactory;
 
-import com.example.demo.model.designpatterns.abstractfactory.model.Vehicle;
+import com.example.demo.designpatterns.abstractfactory.model.Vehicle;
 
 public class Execute {
 

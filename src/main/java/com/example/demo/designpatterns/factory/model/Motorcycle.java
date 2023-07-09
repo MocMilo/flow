@@ -1,4 +1,4 @@
-package com.example.demo.model.designpatterns.factory.model;
+package com.example.demo.designpatterns.factory.model;
 
 public class Motorcycle implements Vehicle {
 

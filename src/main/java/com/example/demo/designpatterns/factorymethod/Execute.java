@@ -1,6 +1,6 @@
-package com.example.demo.model.designpatterns.factorymethod;
+package com.example.demo.designpatterns.factorymethod;
 
-import com.example.demo.model.designpatterns.factory.model.Vehicle;
+import com.example.demo.designpatterns.factory.model.Vehicle;
 
 
 /**

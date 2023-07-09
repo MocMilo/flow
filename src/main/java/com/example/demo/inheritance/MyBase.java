@@ -1,4 +1,4 @@
-package com.example.demo.model.inheritance;
+package com.example.demo.inheritance;
 
 import com.example.demo.model.staticexperiments.Some;
 

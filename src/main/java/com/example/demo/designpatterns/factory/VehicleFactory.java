@@ -1,9 +1,9 @@
-package com.example.demo.model.designpatterns.factory;
+package com.example.demo.designpatterns.factory;
 
-import com.example.demo.model.designpatterns.factory.model.Car;
-import com.example.demo.model.designpatterns.factory.model.Motorcycle;
-import com.example.demo.model.designpatterns.factory.model.Vehicle;
-import com.example.demo.model.designpatterns.factory.model.VehicleType;
+import com.example.demo.designpatterns.factory.model.Car;
+import com.example.demo.designpatterns.factory.model.Vehicle;
+import com.example.demo.designpatterns.factory.model.VehicleType;
+import com.example.demo.designpatterns.factory.model.Motorcycle;
 
 import java.util.HashMap;
 import java.util.Map;

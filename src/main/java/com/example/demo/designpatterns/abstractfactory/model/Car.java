@@ -1,4 +1,4 @@
-package com.example.demo.model.designpatterns.abstractfactory.model;
+package com.example.demo.designpatterns.abstractfactory.model;
 
 public class Car implements Vehicle {
     @Override
