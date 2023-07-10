@@ -1,4 +1,6 @@
-package com.example.demo.algorithms;
+package com.example.demo.algorithms.binarysearch;
+
+import com.example.demo.algorithms.BinarySearchInterface;
 
 public class BinarySearch implements BinarySearchInterface {
 
