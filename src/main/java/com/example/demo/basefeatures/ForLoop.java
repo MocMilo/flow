@@ -2,14 +2,13 @@ package com.example.demo.basefeatures;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 public class ForLoop {
 
     /**
      * FOR LOOP:
-     *  - known and fixed number of iterations
-     *  - needed pointer to iteration number
+     * - known and fixed number of iterations
+     * - needed pointer to iteration number
      */
     public static void main(String[] args) {
 
@@ -23,6 +22,10 @@ public class ForLoop {
         indexDescendingIteration(unsorted);
         foreachLoop(unsorted);
         whileLoop(unsorted);
+
+        loopKeyWordContinue();
+        loopKeyWordBreak();
+        loopKeyWordReturn();
 
     }
 
@@ -65,7 +68,7 @@ public class ForLoop {
             b++;
         }
 
-        Scanner input = new Scanner(System.in);
+/*        Scanner input = new Scanner(System.in);
         String userInput = "";
         while (!userInput.equalsIgnoreCase("exit")) {
             System.out.println("whileLoop - infinite until condition, example for command line");
@@ -73,7 +76,7 @@ public class ForLoop {
             userInput = input.nextLine();
             // Process user input or perform actions
             System.out.println("Executing command: " + userInput);
-        }
+        }*/
 
 /*      boolean isRunning = true;
         while (isRunning) {
@@ -86,5 +89,47 @@ public class ForLoop {
 
     }
 
+    static void loopKeyWordContinue() {
 
+        for (int i = 0; i < 10; i++) {
+            System.out.println("code before >> CONTINUE keyword, iteration number:" + i);
+
+            if (i > 5 && i % 2 == 0) {
+                System.out.println("Condition met! This iteration terminated!");
+                continue;
+            }
+            // this part of code will not be executed,
+            // since iteration:6 and when dividable by 2
+            System.out.println("code after >> CONTINUE keyword");
+        }
+        System.out.println("END method code outside loop after >> CONTINUE keyword");
+    }
+
+    static void loopKeyWordBreak() {
+
+        for (int i = 0; i < 10; i++) {
+            System.out.println("code before >> BREAK keyword, iteration number:" + i);
+
+            if (i > 5 && i % 2 == 0) {
+                System.out.println("Condition met! Rest of looping terminated!");
+                break;
+            }
+        }
+
+        System.out.println("END method code outside loop after >> BREAK keyword");
+    }
+
+    static void loopKeyWordReturn() {
+
+        for (int i = 0; i < 10; i++) {
+            System.out.println("code before >> RETURN keyword, iteration number:" + i);
+
+            if (i > 5 && i % 2 == 0) {
+                System.out.println("Condition met! Rest of looping AND the rest of method body terminated!");
+                return;
+            }
+        }
+        // this will never display
+        System.out.println("END method code outside loop after >> RETURN keyword");
+    }
 }
