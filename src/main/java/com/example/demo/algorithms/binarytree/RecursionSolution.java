@@ -26,18 +26,18 @@ public class RecursionSolution {
         if (root == null) {
             return 0;
         }
-        if (root.left == null && root.right == null) {
+        if (root.getLeft() == null && root.getRight() == null) {
             return 1;
         }
-        if (root.left == null) {
-            return minDepth(root.right) + 1;
+        if (root.getLeft() == null) {
+            return minDepth(root.getRight()) + 1;
         }
-        if (root.right == null) {
-            return minDepth(root.left) + 1;
+        if (root.getRight() == null) {
+            return minDepth(root.getLeft()) + 1;
         }
 
-        int leftDepth = minDepth(root.left);
-        int rightDepth = minDepth(root.right);
+        int leftDepth = minDepth(root.getLeft());
+        int rightDepth = minDepth(root.getRight());
 
         return Math.min(leftDepth, rightDepth) + 1;
     }
