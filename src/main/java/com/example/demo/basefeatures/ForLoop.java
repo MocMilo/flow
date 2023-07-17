@@ -99,7 +99,7 @@ public class ForLoop {
                 continue;
             }
             // this part of code will not be executed,
-            // since iteration:6 and when dividable by 2
+            // since iteration:6 ( >5 and dividable by 2)
             System.out.println("code after >> CONTINUE keyword");
         }
         System.out.println("END method code outside loop after >> CONTINUE keyword");

@@ -15,6 +15,7 @@ public class Factorial {
         } else {
             return n * recursiveFactorial(n - 1);  // inner call of function itself
         }
+    }
 /*
 // next recursive calls do create "chain":
         1) The initial call is factorial(5). Since 5 is not 0 or 1, the function proceeds to the else block.
@@ -35,7 +36,7 @@ public class Factorial {
             ->  "4 * factorial(3)" becomes 4 * 6, resulting in 24.
             ->  Finally (last element of chain), "5 * factorial(4)" becomes "5 * 24", resulting in 120.
 */
-    }
+
 
     public static int iterationFractional(int n) {
 

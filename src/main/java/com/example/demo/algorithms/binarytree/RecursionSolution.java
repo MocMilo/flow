@@ -21,7 +21,7 @@ package com.example.demo.algorithms.binarytree;
  * }
  */
 public class RecursionSolution {
-    public int minDepth(TreeNode root) {
+    public int minDepth(BinaryTreeNode root) {
 
         if (root == null) {
             return 0;

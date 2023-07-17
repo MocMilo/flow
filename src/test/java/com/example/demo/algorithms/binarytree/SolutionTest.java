@@ -18,11 +18,11 @@ class SolutionTest {
     @Test
     void testMinDepth() {
         // Create the binary tree
-        TreeNode root = new TreeNode(3); // root node
-        root.setLeft(new TreeNode(9)); // leaf node
-        root.setRight(new TreeNode(20));
-        root.getRight().setLeft(new TreeNode(15)); // leaf node
-        root.getRight().setRight(new TreeNode(7)); // leaf node
+        BinaryTreeNode root = new BinaryTreeNode(3); // root node
+        root.setLeft(new BinaryTreeNode(9)); // leaf node
+        root.setRight(new BinaryTreeNode(20));
+        root.getRight().setLeft(new BinaryTreeNode(15)); // leaf node
+        root.getRight().setRight(new BinaryTreeNode(7)); // leaf node
 
         RecursionSolution recursionSolution = new RecursionSolution();
         int minDepth = recursionSolution.minDepth(root);
@@ -44,19 +44,19 @@ class SolutionTest {
     @Test
     void testMinDepthWithNullValues() {
         // Create the binary tree with null values
-        TreeNode root = new TreeNode(1);  // root node
+        BinaryTreeNode root = new BinaryTreeNode(1);  // root node
         root.setLeft(null);
 
-        root.setRight(new TreeNode(2));
+        root.setRight(new BinaryTreeNode(2));
         root.getRight().setLeft(null);
 
-        root.getRight().setRight(new TreeNode(3));
+        root.getRight().setRight(new BinaryTreeNode(3));
         root.getRight().getRight().setLeft(null);
 
-        root.getRight().getRight().setRight(new TreeNode(4));
+        root.getRight().getRight().setRight(new BinaryTreeNode(4));
         root.getRight().getRight().getRight().setLeft(null);
 
-        root.getRight().getRight().getRight().setRight(new TreeNode(5)); // leaf node
+        root.getRight().getRight().getRight().setRight(new BinaryTreeNode(5)); // leaf node
 
         RecursionSolution solution = new RecursionSolution();
         int minDepth = solution.minDepth(root);

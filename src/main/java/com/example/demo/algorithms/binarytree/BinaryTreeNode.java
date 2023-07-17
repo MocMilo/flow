@@ -1,19 +1,16 @@
 package com.example.demo.algorithms.binarytree;
 
-public class TreeNode {
+public class BinaryTreeNode {
 
     private int val;
-    private TreeNode left;
-    private TreeNode right;
+    private BinaryTreeNode left;
+    private BinaryTreeNode right;
 
-    TreeNode() {
-    }
-
-    TreeNode(int val) {
+    BinaryTreeNode(int val) {
         this.val = val;
     }
 
-    TreeNode(int val, TreeNode left, TreeNode right) {
+    BinaryTreeNode(int val, BinaryTreeNode left, BinaryTreeNode right) {
         this.val = val;
         this.left = left;
         this.right = right;
@@ -27,19 +24,19 @@ public class TreeNode {
         this.val = val;
     }
 
-    public TreeNode getLeft() {
+    public BinaryTreeNode getLeft() {
         return left;
     }
 
-    public void setLeft(TreeNode left) {
+    public void setLeft(BinaryTreeNode left) {
         this.left = left;
     }
 
-    public TreeNode getRight() {
+    public BinaryTreeNode getRight() {
         return right;
     }
 
-    public void setRight(TreeNode right) {
+    public void setRight(BinaryTreeNode right) {
         this.right = right;
     }
 }

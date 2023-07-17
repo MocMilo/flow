@@ -1,7 +1,5 @@
 package com.example.demo.algorithms.binarysearch;
 
-import com.example.demo.algorithms.BinarySearchInterface;
-
 public class BinarySearch implements BinarySearchInterface {
 
     /*
@@ -23,7 +21,8 @@ public class BinarySearch implements BinarySearchInterface {
         while (startIndex <= endIndex) {
 
             // universal formula of middle of index range
-            int halfIndex = startIndex + ((endIndex - startIndex) / 2);    // understand this! Hint Analyse: second iteration and next iterations...
+            // understand this! Hint Analyse: second iteration and next iterations...
+            int halfIndex = startIndex + ((endIndex - startIndex) / 2);
 
             if (arr[halfIndex] == target) {
 
