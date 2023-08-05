@@ -3,10 +3,8 @@ package com.example.demo.ankicrackcode;
 
 import com.example.demo.ankicrackcode.model.Person;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
+import java.sql.SQLOutput;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
@@ -30,7 +28,9 @@ public class Solutions {
 
         //subList();
 
-        groups();
+        //groups();
+
+        addElementToEnd();
 
     }
 
@@ -178,4 +178,24 @@ public class Solutions {
 
         groups2.forEach((k, v) -> System.out.println("key:" + k + " value:" + v));
     }
+
+    static void addElementToEnd() {
+        int[] orgArray = {1, 2, 2, 3, 4, 5, 6};
+        int elementToAdd = 5;
+
+        System.out.println(Arrays.toString(orgArray));
+
+        int[] newArray = Arrays.copyOf(orgArray, orgArray.length + 1);
+        System.out.println(" new orgLength: "+orgArray.length);
+        newArray[orgArray.length] = elementToAdd;
+
+        System.out.println("changed");
+        System.out.println(Arrays.toString(orgArray));
+        System.out.println(Arrays.toString(newArray));
+    }
+
+
+
+
+
 }
